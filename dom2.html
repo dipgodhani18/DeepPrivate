@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>The getElementsByClassName() Method</h2>
+
+    <p>Change the text of the first element with class="example":</p>
+
+    <div class="ex"></div>
+    <div class="ex"></div>
+
+    <script>
+        const a = document.getElementsByClassName("ex");
+        a[0].innerHTML = "Hello World!";
+        a[1].innerHTML = "Hello World!";
+    </script>
+
+</body>
+
+</html>

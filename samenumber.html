@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(32, 44, 66);
+    }
+    
+    form {
+        border: 10px solid black;
+        background: rgb(46, 46, 179);
+        border-radius: 30px;
+        padding: 50px;
+        height: 280px;
+        width: 250px;
+        color: aliceblue;
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    
+    input {
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        height: 25px;
+    }
+    
+    #submit {
+        margin-left: 60px;
+        margin-top: 25px;
+        height: 35px;
+        width: 150px;
+        background-color: aqua;
+        color: black;
+        border: 2px solid black;
+        font-weight: bolder;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black, 0 0 100px black;
+    }
+</style>
+
+<body>
+    <form>
+        <label>Number 1 :</label>
+        <input type="number" id="no1" name="no1"><br><br>
+        <label>Number 2 :</label>
+        <input type="number" id="no2" name="no2"><br><br>
+        <label>Number 3 :</label>
+        <input type="number" id="no3" name="no3"><br><br>
+        <label>Number 4 :</label>
+        <input type="number" id="no4" name="no4"><br><br>
+        <label>Number 5 :</label>
+        <input type="number" id="no5" name="no5"><br><br>
+
+        <input type="submit" id="submit" value="Enter" onclick="kohli()">
+    </form>
+
+    <script>
+        function kohli() {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+            var c = parseInt(document.getElementById("no3").value);
+            var d = parseInt(document.getElementById("no4").value);
+            var e = parseInt(document.getElementById("no5").value);
+
+            // two number are equal //
+            if (a == b && a != c && a != d && a != e) {
+                document.write("<br>Number 1 & 2 are equal");
+            } else if (a == c && a != b && a != d && a != e) {
+                document.write("<br>Number 1 & 3 are equal");
+            } else if (a == d && a != b && a != c && a != e) {
+                document.write("<br>Number 1 & 4 are equal");
+            } else if (a == e && a != b && a != c && a != d) {
+                document.write("<br>Number 1 & 5 are equal");
+            } else if (b == c && b != a && b != d && b != e) {
+                document.write("<br>Number 2 & 3 are equal");
+            } else if (b == d && b != a && b != c && b != e) {
+                document.write("<br>Number 2 & 4 are equal");
+            } else if (b == e && b != a && b != c && b != d) {
+                document.write("<br>Number 2 & 5 are equal");
+            } else if (c == d && c != a && c != b && c != e) {
+                document.write("<br>Number 3 & 4 are equal");
+            } else if (c == e && c != a && c != b && c != d) {
+                document.write("<br>Number 3 & 5 are equal");
+            } else if (d == e && d != a && d != b && d != c) {
+                document.write("<br>Number 4 & 5 are equal");
+            }
+            // 3 number are equal //
+            else if (a == b == c && a !== d !== e && a !== d !== b && a !== d !== c && a !== e !== b && a !== e !== c) {
+                document.write("<br>Number 1, 2 & 3 are equal");
+            } else if (a == b == d && a !== b !== c && a !== b !== e && a !== c !== d && a !== c !== e && a !== d !== e) {
+                document.write("<br>Number 1, 2 & 4 are equal");
+            } else if (a == b == e && a !== b !== c && a !== b !== d && a !== c !== d && a !== c !== e && a !== d !== e) {
+                document.write("<br>Number 1, 2 & 5 are equal");
+            } else if (a == c == d && a !== b !== c) {
+                document.write("<br>Number 1, 3 & 4 are equal");
+            } else if (a == c == e && a !== b !== d) {
+                document.write("<br>Number 1, 3 & 5 are equal");
+            } else if (a == d == e && a !== b !== c) {
+                document.write("<br>Number 1, 4 & 5 are equal");
+            } else if (b == c == d && b !== a !== e) {
+                document.write("<br>Number 2, 3 & 4 are equal");
+            } else if (b == c == e && b !== a !== d) {
+                document.write("<br>Number 2, 3 & 5 are equal");
+            } else if (b == d == e && b !== a !== c) {
+                document.write("<br>Number 2, 4 & 5 are equal");
+            } else if (c == d == e && c !== a !== b) {
+                document.write("<br>Number 3, 4 & 5 are equal");
+            }
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>

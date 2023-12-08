@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #ans {
+        width: 250px;
+    }
+</style>
+
+<body>
+    <h1> Check whether a year is a leap year or not. </h1>
+    <label>Year A :</label>&nbsp;
+    <input type="number" id="no1" name="no1">
+    <br><br>
+    <label>Year B :</label>&nbsp;
+    <input type="number" id="no2" name="no1">
+    <br><br>
+    <label>Year C :</label>&nbsp;
+    <input type="number" id="no3" name="no1">
+    <br><br>
+    <input type="submit" name="Enter" id="submit" onclick="answer()">
+    <br>
+    <br>
+    <input type="text" id="ans">
+
+    <script>
+        function answer() {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+            var c = parseInt(document.getElementById("no3").value);
+
+            if (a % 4 == 0 && b % 4 !== 0 && c % 4 !== 0) {
+                document.getElementById("ans").value = "Year A Is Leap Year";
+            } else if (b % 4 == 0 && a % 4 !== 0 && c % 4 !== 0) {
+                document.getElementById("ans").value = "Year B Is Leap Year";
+            } else if (c % 4 == 0 && a % 4 !== 0 && b % 4 !== 0) {
+                document.getElementById("ans").value = "Year C Is Leap Year";
+            } else if (a % 4 == 0 && b % 4 == 0 && c % 4 !== 0) {
+                document.getElementById("ans").value = "Year A & B Is Leap Year";
+            } else if (a % 4 == 0 && c % 4 == 0 && b % 4 !== 0) {
+                document.getElementById("ans").value = "Year A & C Is Leap Year";
+            } else if (b % 4 == 0 && c % 4 == 0 && a % 4 !== 0) {
+                document.getElementById("ans").value = "Year B & C Is Leap Year";
+            } else if (a % 4 == 0 && b % 4 == 0 && c % 4 == 0) {
+                document.getElementById("ans").value = "Year A, B & C Is Leap Year";
+            } else if (a % 4 !== 0 && b % 4 !== 0 && c % 4 !== 0) {
+                document.getElementById("ans").value = "Year A, B & C Is Not Leap Year";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

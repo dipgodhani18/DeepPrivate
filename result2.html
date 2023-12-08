@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .containor {
+        border: 1px solid black;
+        display: flex;
+        padding: 10px;
+    }
+    
+    .containor1 {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        width: 48%;
+    }
+    
+    .container2 {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        width: 48%;
+    }
+    
+    table {
+        width: 100%;
+        text-align: center;
+    }
+    
+    th,
+    td {
+        border: 1px solid black;
+    }
+    
+    table th,
+    td {
+        height: 30px;
+    }
+    
+    .back {
+        width: 20%;
+        border: none;
+    }
+    
+    .back input {
+        border: 1px solid black;
+        outline: none;
+        height: 30px;
+        width: 95%;
+    }
+    
+    #iname,
+    #sname,
+    #rollno,
+    #std,
+    #ename,
+    #institute,
+    #student,
+    #roll,
+    #standard,
+    #exam,
+    #per,
+    #res {
+        outline: none;
+        border: 1px solid black;
+        height: 25px;
+    }
+    
+    #submit {
+        font-size: 20px;
+        height: 35px;
+        width: 150px;
+        margin-top: 40px;
+        margin-left: 225px;
+    }
+</style>
+
+<body>
+    <div class="containor">
+        <!--Input department-->
+        <div class="containor1">
+            <label for="">
+                    <b>Institute Name :-</b>
+                </label>
+            <input type="text" name="name" id="iname" style="width: 80%;">
+            <br>
+            <br>
+            <label for="">
+                    <b>Student Name :-</b>
+                </label>
+            <input type="text" name="sname" id="sname" style="width: 45%;"> &nbsp;&nbsp;
+            <label for="">&nbsp;&nbsp;
+                    <b>Roll no :-</b>
+                </label>
+            <input type="text" name="rollno" id="rollno" style="width: 20.5%;">
+            <br>
+            <br>
+            <label for="">
+                    <b>Standard :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                </label>
+            <input type="text" name="std" id="std" style="width: 20%;">
+            <br>
+            <br>
+            <label for="">
+                    <b>Exam no :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                </label>
+            <input type="text" name="ename" id="ename" style="width: 20%;">
+            <br>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtain Marks</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="number" id="input1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="number" id="input2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gujrati</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="number" id="input3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hindi</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="number" id="input4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="number" id="input5">
+                    </td>
+                </tr>
+                <br>
+            </table>
+            <input type="submit" id="submit" value="Enter" onclick="submition()">
+        </div>
+        <!--output department-->
+        <div class="container2">
+            <label for="">
+                    <b>Institute Name :-</b>
+                </label>
+            <input type="text" name="name" id="institute" style="width: 80%;">
+            <br>
+            <br>
+            <label for="">
+                    <b>Student Name :-</b>
+                </label>
+            <input type="text" name="sname" id="student" style="width: 45%;"> &nbsp;&nbsp;
+            <label for="">
+                    <b>&nbsp;&nbsp;Roll no :-</b>
+                </label>
+            <input type="text" name="rollno" id="roll" style="width: 20.5%;">
+            <br>
+            <br>
+            <label for="">
+                    <b>Standard :-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+            <input type="text" name="std" id="standard" style="width: 20%;">
+            <br>
+            <br>
+            <label for="">
+                    <b>Exam no :-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+            <input type="text" name="ename" id="exam" style="width: 20%;">
+            <br>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtain Marks</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="text" id="input6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="text" id="input7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gujrati</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="text" id="input8">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hindi</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="text" id="input9">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>100</td>
+                    <td class="back">
+                        <input type="text" id="input10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total</b>
+                    </td>
+                    <td>
+                        <b>500</b>
+                    </td>
+                    <td class="back">
+                        <b>
+                                <input type="text" id="input11">
+                            </b>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <label>
+                    <b>Percentage :-&nbsp;</b>
+                </label>
+            <input type="text" id="per">
+            <br>
+        </div>
+    </div>
+    <script>
+        function submition() {
+            var a = document.getElementById("iname").value;
+            var b = document.getElementById("sname").value;
+            var c = document.getElementById("rollno").value;
+            var d = document.getElementById("std").value;
+            var e = document.getElementById("ename").value;
+
+            var f = parseInt(document.getElementById("input1").value);
+            var g = parseInt(document.getElementById("input2").value);
+            var h = parseInt(document.getElementById("input3").value);
+            var i = parseInt(document.getElementById("input4").value);
+            var j = parseInt(document.getElementById("input5").value);
+
+            var result;
+            var percentage;
+
+            document.getElementById("institute").value = a;
+            document.getElementById("student").value = b;
+            document.getElementById("roll").value = c;
+            document.getElementById("standard").value = d;
+            document.getElementById("exam").value = e;
+
+            document.getElementById("input6").value = f;
+            document.getElementById("input7").value = g;
+            document.getElementById("input8").value = h;
+            document.getElementById("input9").value = i;
+            document.getElementById("input10").value = j;
+
+            result = f + g + h + i + j;
+            percentage = result / 5;
+            document.getElementById("input11").value = result;
+            document.getElementById("per").value = percentage + "%";
+        }
+    </script>
+</body>
+
+</html>

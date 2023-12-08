@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header::before {
+        background: url(bakary.jpg) no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    
+    .navigation {
+        font-size: 20px;
+        display: flex;
+    }
+    
+    li {
+        list-style: none;
+        padding: 34px 23px;
+    }
+    
+    section {
+        height: 344px;
+        font-family: 'Bree Serif', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>After & Before</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat officiis consectetur quasi. Neque amet consequuntur nihil laboriosam doloribus maiores est officia? Odio eaque quia quas id minima, facilis quaerat soluta aut?
+            </p>
+        </section>
+    </header>
+</body>
+
+</html>

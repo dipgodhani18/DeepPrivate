@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(32, 44, 66);
+    }
+    
+    form {
+        border: 10px solid black;
+        background: rgb(46, 46, 179);
+        border-radius: 30px;
+        padding: 50px;
+        height: 280px;
+        width: 250px;
+        color: aliceblue;
+    }
+    
+    input {
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        height: 25px;
+    }
+    
+    #submit {
+        margin-left: 60px;
+        margin-top: 25px;
+        height: 35px;
+        width: 150px;
+        background-color: aqua;
+        color: black;
+        border: 2px solid black;
+        font-weight: bolder;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px black, 0 0 25px black, 0 0 50px black, 0 0 100px black;
+    }
+</style>
+
+<body>
+    <form>
+        <label>Number 1 :</label>
+        <input type="number" id="no1" name="no1"><br><br>
+        <label>Number 2 :</label>
+        <input type="number" id="no2" name="no2"><br><br>
+        <label>Number 3 :</label>
+        <input type="number" id="no3" name="no3"><br><br>
+        <label>Number 4 :</label>
+        <input type="number" id="no4" name="no4"><br><br>
+        <label>Number 5 :</label>
+        <input type="number" id="no5" name="no5"><br><br>
+
+        <input type="submit" id="submit" value="Enter" onclick="kohli()">
+    </form>
+
+    <script>
+        function kohli() {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+            var c = parseInt(document.getElementById("no3").value);
+            var d = parseInt(document.getElementById("no4").value);
+            var e = parseInt(document.getElementById("no5").value);
+
+            // one number is big //
+
+            if (a > b && a > c && a > d && a > e) {
+                document.write("<br>number 1 is big");
+            } else if (b > a && b > c && b > d && b > e) {
+                document.write("<br>number 2 is big");
+            } else if (c > a && c > b && c > d && c > e) {
+                document.write("<br>number 3 is big");
+            } else if (d > a && d > b && d > c && d > e) {
+                document.write("<br>number 4 is big");
+            } else if (e > a && e > b && e > c && e > d) {
+                document.write("<br>number 5 is big");
+            }
+
+            // one number is small //
+
+            if (a < b && a < c && a < d && a < e) {
+                document.write("<br>number 1 is small");
+            } else if (b < a && b < c && b < d && b < e) {
+                document.write("<br>number 2 is small");
+            } else if (c < a && c < b && c < d && c < e) {
+                document.write("<br>number 3 is small");
+            } else if (d < a && d < b && d < c && d < e) {
+                document.write("<br>number 4 is small");
+            } else if (e < a && e < b && e < c && e < d) {
+                document.write("<br>number 5 is small");
+            }
+
+
+            // equal number //
+            else if (a == b && a == c && a == d && a == e && b == c && b == d && b == e && c == d && c == e && d == e) {
+
+                document.write("<br>all number are equal ");
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

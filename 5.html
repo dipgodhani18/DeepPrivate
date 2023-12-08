@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #ans {
+        width: 250px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1> Uppercase, Lowercase, Special Character, or Digit </h1>
+    <label>Enter Character :</label>
+    <input type="text" id="no1" name="no1">
+    <br><br>
+    <input type="submit" name="Enter" id="submit" onclick="answer()">
+    <br>
+    <br>
+    <input type="text" id="ans">
+
+    <script>
+        function answer() {
+            var a = document.getElementById("no1").value;
+
+            if (a >= 'A' && a <= 'Z') {
+                document.getElementById("ans").value = "Given Character Is Uppercase ";
+            } else if (a >= 'a' && a <= 'z') {
+                document.getElementById("ans").value = "Given Character Is Lowercase ";
+            } else if (!(a >= 'A' && a <= 'Z') || !(a >= 'a' && a <= 'z')) {
+                document.getElementById("ans").value = "Given Character Is Special Character ";
+            } else if (a >= 1 && a <= 100) {
+                document.getElementById("ans").value = "Given Number is Digit";
+            }
+        }
+    </script>
+</body>
+
+</html>

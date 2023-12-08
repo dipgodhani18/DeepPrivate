@@ -1,0 +1,26 @@
+
+
+
+
+
+
+11. The Date Is Correct or Not
+12. Voting Eligibility Checker
+
+
+
+
+
+
+
+
+23. Input the week number and print the weekday.
+24. Input the month number and print the number of days in that month.
+25. Count the total number of notes in a given amount.
+26. Input the angles of a triangle and check whether the triangle is valid or 
+not.
+27. Input all sides of a triangle and check whether the triangle is valid or 
+not.
+28. Check whether the triangle is an equilateral, isosceles or scalene 
+triangle.
+29. Find all roots of a quadratic equation.

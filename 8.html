@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Greatest of Two Numbers</h1>
+    <label>Number-1 :</label>&nbsp;
+    <input type="number" id="no1" name="no1">
+    <br><br>
+    <label>Number-2 :</label>&nbsp;
+    <input type="number" id="no2" name="no1">
+    <br><br>
+
+    <input type="submit" name="Enter" id="submit" onclick="answer()">
+    <br>
+    <br>
+    <input type="text" id="ans">
+
+    <script>
+        function answer() {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+
+            if (a >= b) {
+                document.getElementById("ans").value = "Number 1 is Greatest";
+            } else if (b >= a) {
+                document.getElementById("ans").value = "Number 2 is Greatest";
+            }
+        }
+    </script>
+</body>
+
+</html>

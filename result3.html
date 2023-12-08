@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .containor {
+        border: 1px solid black;
+        display: flex;
+        padding: 10px;
+    }
+    
+    .containor1 {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        width: 48%;
+    }
+    
+    .container2 {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        width: 48%;
+    }
+    
+    table {
+        width: 100%;
+        text-align: center;
+    }
+    
+    th,
+    td {
+        border: 1px solid black;
+    }
+    
+    th {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    td {
+        letter-spacing: 1px;
+    }
+    
+    table th,
+    td {
+        height: 30px;
+    }
+    
+    .back {
+        width: 20%;
+        border: none;
+    }
+    
+    .back input {
+        border: 1px solid black;
+        outline: none;
+        height: 30px;
+        width: 95%;
+    }
+    
+    #iname,
+    #sname,
+    #rollno,
+    #std,
+    #ename,
+    #institute,
+    #student,
+    #roll,
+    #standard,
+    #exam,
+    #per,
+    #res,
+    #marka,
+    #markb,
+    #markc,
+    #markd,
+    #marke,
+    #mark1,
+    #mark2,
+    #mark3,
+    #mark4,
+    #mark5 {
+        outline: none;
+        border: 1px solid black;
+        height: 30px;
+    }
+    
+    #submit {
+        font-size: 25px;
+        height: 45px;
+        width: 175px;
+        border: 4px solid black;
+        font-weight: bolder;
+        margin-top: 40px;
+        margin-left: 305px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="containor">
+        <!--Input department-->
+        <div class="containor1">
+            <label for=""><b>Institute Name :-</b></label>
+            <input type="text" name="name" id="iname" style="width: 80%;">
+            <br>
+            <br>
+            <label for=""><b>Student Name :-</b></label>
+            <input type="text" name="sname" id="sname" style="width: 45%;"> &nbsp;&nbsp;
+            <label for="">&nbsp;&nbsp;<b>Roll no :-</b></label>
+            <input type="text" name="rollno" id="rollno" style="width: 20.5%;">
+            <br>
+            <br>
+            <label for=""><b>Standard :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <input type="text" name="std" id="std" style="width: 20%;">
+            <br>
+            <br>
+            <label for=""><b>Exam no :-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            <input type="text" name="ename" id="ename" style="width: 20%;">
+            <br>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtain Marks</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td class="back"><input type="text" id="marka"></td>
+                    <td class="back">
+                        <input type="number" id="input1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td class="back"><input type="text" id="markb"></td>
+                    <td class="back">
+                        <input type="number" id="input2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gujrati</td>
+                    <td class="back"><input type="text" id="markc"></td>
+                    <td class="back">
+                        <input type="number" id="input3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hindi</td>
+                    <td class="back"><input type="text" id="markd"></td>
+                    <td class="back">
+                        <input type="number" id="input4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td class="back"><input type="text" id="marke"></td>
+                    <td class="back">
+                        <input type="number" id="input5">
+                    </td>
+                </tr>
+                <br>
+            </table>
+            <input type="submit" id="submit" value="Enter" onclick="submition()">
+        </div>
+        <!--output department-->
+        <div class="container2">
+            <label for=""><b>Institute Name :-</b></label>
+            <input type="text" name="name" id="institute" style="width: 80%;">
+            <br>
+            <br>
+            <label for=""><b>Student Name :-</b></label>
+            <input type="text" name="sname" id="student" style="width: 45%;"> &nbsp;&nbsp;
+            <label for=""><b>&nbsp;&nbsp;Roll no :-</b></label>
+            <input type="text" name="rollno" id="roll" style="width: 20.5%;">
+            <br>
+            <br>
+            <label for=""><b>Standard :-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="std" id="standard" style="width: 20%;">
+            <br>
+            <br>
+            <label for=""><b>Exam no :-</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="ename" id="exam" style="width: 20%;">
+            <br>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Total Marks</th>
+                    <th>Obtain Marks</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td class="back"><input type="text" id="mark1"></td>
+                    <td class="back">
+                        <input type="text" id="input6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td class="back"><input type="text" id="mark2"></td>
+                    <td class="back">
+                        <input type="text" id="input7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gujrati</td>
+                    <td class="back"><input type="text" id="mark3"></td>
+                    <td class="back">
+                        <input type="text" id="input8">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hindi</td>
+                    <td class="back"><input type="text" id="mark4"></td>
+                    <td class="back">
+                        <input type="text" id="input9">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td class="back"><input type="text" id="mark5"></td>
+                    <td class="back">
+                        <input type="text" id="input10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Total</b>
+                    </td>
+                    <td class="back">
+                        <input type="text" id="marktotal">
+                    </td>
+                    <td class="back">
+                        <b>
+                                <input type="text" id="input11">
+                            </b>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <label>
+                    <b>Percentage :-&nbsp;</b>
+                </label>
+            <input type="text" id="per">
+        </div>
+    </div>
+    <script>
+        function submition() {
+            var a = document.getElementById("iname").value;
+            var b = document.getElementById("sname").value;
+            var c = document.getElementById("rollno").value;
+            var d = document.getElementById("std").value;
+            var e = document.getElementById("ename").value;
+
+            var aa = parseInt(document.getElementById("marka").value);
+            var bb = parseInt(document.getElementById("markb").value);
+            var cc = parseInt(document.getElementById("markc").value);
+            var dd = parseInt(document.getElementById("markd").value);
+            var ee = parseInt(document.getElementById("markd").value);
+
+            var f = parseInt(document.getElementById("input1").value);
+            var g = parseInt(document.getElementById("input2").value);
+            var h = parseInt(document.getElementById("input3").value);
+            var i = parseInt(document.getElementById("input4").value);
+            var j = parseInt(document.getElementById("input5").value);
+
+            var total;
+            var result;
+            var percentage;
+
+            document.getElementById("institute").value = a;
+            document.getElementById("student").value = b;
+            document.getElementById("roll").value = c;
+            document.getElementById("standard").value = d;
+            document.getElementById("exam").value = e;
+
+            document.getElementById("mark1").value = aa;
+            document.getElementById("mark2").value = bb;
+            document.getElementById("mark3").value = cc;
+            document.getElementById("mark4").value = dd;
+            document.getElementById("mark5").value = ee;
+
+            document.getElementById("input6").value = f;
+            document.getElementById("input7").value = g;
+            document.getElementById("input8").value = h;
+            document.getElementById("input9").value = i;
+            document.getElementById("input10").value = j;
+
+            total = aa + bb + cc + dd + ee;
+            result = f + g + h + i + j;
+            percentage = result / 5;
+
+            document.getElementById("marktotal").value = total;
+            document.getElementById("input11").value = result;
+            document.getElementById("per").value = percentage + "%";
+
+        }
+    </script>
+</body>
+
+</html>

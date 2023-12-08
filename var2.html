@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="varstyle.css">
+</head>
+
+<body>
+    <div class="js1">
+        <h1>Summetion</h1>
+        <br>
+        <br>
+        <label>Number 1 :-</label>
+        <input type="text" id="no1" name="no1">
+        <br>
+        <br>
+        <label>Number 2 :-</label>
+        <input type="text" id="no2" name="no2">
+        <br>
+        <br>
+        <input type="submit" id="enter" value="Enter" onclick="summetion()">
+
+        <script>
+            function summetion() {
+                var x = parseInt(document.getElementById("no1").value);
+                var y = parseInt(document.getElementById("no2").value);
+
+                var r;
+
+                r = x + y;
+                document.write("Summetion =", r)
+            }
+        </script>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="js2">
+        <h1>Subsraction</h1>
+        <br>
+        <br>
+        <label>Number 3 :-</label>
+        <input type="text" id="no3" name="no3">
+        <br>
+        <br>
+        <label>Number 4 :-</label>
+        <input type="text" id="no4" name="no4">
+        <br>
+        <br>
+        <input type="submit" id="enter" value="Enter" onclick="subtraction()">
+
+
+        <script>
+            function subtraction() {
+                var x = parseInt(document.getElementById("no3").value);
+                var y = parseInt(document.getElementById("no4").value);
+
+                var r;
+
+                r = x - y;
+                document.write("Subtraction =", r)
+            }
+        </script>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="js3">
+        <h1>Multiplication</h1>
+        <br>
+        <br>
+        <label>Number 5 :-</label>
+        <input type="text" id="no5" name="no5">
+        <br>
+        <br>
+        <label>Number 6 :-</label>
+        <input type="text" id="no6" name="no6">
+        <br>
+        <br>
+        <input type="submit" id="enter" value="Enter" onclick="multiplication()">
+
+
+        <script>
+            function multiplication() {
+                var x = parseInt(document.getElementById("no5").value);
+                var y = parseInt(document.getElementById("no6").value);
+
+                var r;
+
+                r = x * y;
+                document.write("Multiplication =", r)
+            }
+        </script>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="js4">
+        <h1>Division</h1>
+        <br>
+        <br>
+        <label>Number 7 :-</label>
+        <input type="text" id="no7" name="no7">
+        <br>
+        <br>
+        <label>Number 8 :-</label>
+        <input type="text" id="no8" name="no8">
+        <br>
+        <br>
+        <input type="submit" id="enter" value="Enter" onclick="division()">
+
+
+        <script>
+            function division() {
+                var x = parseInt(document.getElementById("no7").value);
+                var y = parseInt(document.getElementById("no8").value);
+
+                var r;
+
+                r = x / y;
+                document.write("Division =", r)
+            }
+        </script>
+    </div>
+</body>
+
+</html>

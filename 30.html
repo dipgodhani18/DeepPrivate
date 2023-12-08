@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        border: 2px solid black;
+        height: 900px;
+        width: 1000px;
+    }
+    
+    .container h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 10px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    
+    .container h3 {
+        padding-top: 30px;
+        padding-left: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    table {
+        border: 4px solid black;
+        padding: 5px;
+        margin-left: 10px;
+    }
+    
+    table th {
+        border: 2px solid black;
+        height: 35px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    #info1,
+    #info2,
+    #info3,
+    #info4,
+    #info5,
+    #info6,
+    #info7,
+    #info8,
+    #info9,
+    #info10,
+    #info11,
+    #info12,
+    #info13,
+    #info14,
+    #info15,
+    #info16,
+    #info17,
+    #info18,
+    #info19,
+    #info20 {
+        height: 30px;
+        width: 300px;
+        outline: none;
+        font-size: 17px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+    #amount1,
+    #amount2,
+    #amount3,
+    #amount4,
+    #amount5,
+    #amount6,
+    #amount7,
+    #amount8,
+    #amount9,
+    #amount10,
+    #amount11,
+    #amount12,
+    #amount13,
+    #amount14,
+    #amount15,
+    #amount16,
+    #amount17,
+    #amount18,
+    #amount19,
+    #amount20 {
+        height: 30px;
+        width: 175px;
+        letter-spacing: 1px;
+        outline: none;
+        font-size: 15px;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #total1,
+    #total2 {
+        height: 35px;
+        width: 175px;
+        letter-spacing: 1px;
+        outline: none;
+        font-size: 20px;
+        border: 2px solid black;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #profit {
+        height: 40px;
+        width: 300px;
+        letter-spacing: 1px;
+        outline: none;
+        font-size: 20px;
+        border: 3px solid black;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 33.5%;
+    }
+    
+    .total {
+        border: none;
+    }
+    
+    #submit {
+        height: 40px;
+        width: 175px;
+        background: black;
+        color: aliceblue;
+        border: none;
+        border-radius: 5px;
+        font-size: 25px;
+        margin-left: 40%;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <br>
+    <br>
+    <div class="container">
+        <h1>Infotech Private Limited</h1>
+        <h3> Balance Sheet Of Infotech Private ltd, 2023</h3>
+        <br>
+        <table>
+            <tr>
+                <th colspan="2">ASSETS</th>
+                <th colspan="2">LIABILITIES</th>
+            </tr>
+            <tr>
+                <th>Information</th>
+                <th>Amount</th>
+                <th>Information</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info1">
+                </td>
+                <td>
+                    <input type="text" id="amount1">
+                </td>
+                <td>
+                    <input type="text" id="info11">
+                </td>
+                <td>
+                    <input type="text" id="amount11">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info2">
+                </td>
+                <td>
+                    <input type="text" id="amount2">
+                </td>
+                <td>
+                    <input type="text" id="info12">
+                </td>
+                <td>
+                    <input type="text" id="amount12">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info3">
+                </td>
+                <td>
+                    <input type="text" id="amount3">
+                </td>
+                <td>
+                    <input type="text" id="info13">
+                </td>
+                <td>
+                    <input type="text" id="amount13">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info4">
+                </td>
+                <td>
+                    <input type="text" id="amount4">
+                </td>
+                <td>
+                    <input type="text" id="info14">
+                </td>
+                <td>
+                    <input type="text" id="amount14">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info5">
+                </td>
+                <td>
+                    <input type="text" id="amount5">
+                </td>
+                <td>
+                    <input type="text" id="info15">
+                </td>
+                <td>
+                    <input type="text" id="amount15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info6">
+                </td>
+                <td>
+                    <input type="text" id="amount6">
+                </td>
+                <td>
+                    <input type="text" id="info16">
+                </td>
+                <td>
+                    <input type="text" id="amount16">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info7">
+                </td>
+                <td>
+                    <input type="text" id="amount7">
+                </td>
+                <td>
+                    <input type="text" id="info17">
+                </td>
+                <td>
+                    <input type="text" id="amount17">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info8">
+                </td>
+                <td>
+                    <input type="text" id="amount8">
+                </td>
+                <td>
+                    <input type="text" id="info18">
+                </td>
+                <td>
+                    <input type="text" id="amount18">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info9">
+                </td>
+                <td>
+                    <input type="text" id="amount9">
+                </td>
+                <td>
+                    <input type="text" id="info19">
+                </td>
+                <td>
+                    <input type="text" id="amount19">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="info10">
+                </td>
+                <td>
+                    <input type="text" id="amount10">
+                </td>
+                <td>
+                    <input type="text" id="info20">
+                </td>
+                <td>
+                    <input type="text" id="amount20">
+                </td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th class="total">
+                    <input type="text" id="total1">
+                </th>
+                <th>Total</th>
+                <th class="total">
+                    <input type="text" id="total2">
+                </th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <input type="submit" id="submit" value="Enter" onclick="answer()">
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="text" id="profit">
+    </div>
+    <script>
+        function answer() {
+
+            var a = parseInt(document.getElementById("amount1").value);
+            var b = parseInt(document.getElementById("amount2").value);
+            var c = parseInt(document.getElementById("amount3").value);
+            var d = parseInt(document.getElementById("amount4").value);
+            var e = parseInt(document.getElementById("amount5").value);
+            var f = parseInt(document.getElementById("amount6").value);
+            var g = parseInt(document.getElementById("amount7").value);
+            var h = parseInt(document.getElementById("amount8").value);
+            var i = parseInt(document.getElementById("amount9").value);
+            var j = parseInt(document.getElementById("amount10").value);
+
+            var k = parseInt(document.getElementById("amount11").value);
+            var l = parseInt(document.getElementById("amount12").value);
+            var m = parseInt(document.getElementById("amount13").value);
+            var n = parseInt(document.getElementById("amount14").value);
+            var o = parseInt(document.getElementById("amount15").value);
+            var p = parseInt(document.getElementById("amount16").value);
+            var q = parseInt(document.getElementById("amount17").value);
+            var r = parseInt(document.getElementById("amount18").value);
+            var s = parseInt(document.getElementById("amount19").value);
+            var t = parseInt(document.getElementById("amount20").value);
+
+
+            var x = a + b + c + d + e + f + g + h + i + j;
+            document.getElementById("total1").value = x;
+
+            var y = k + l + m + n + o + p + q + r + s + t;
+            document.getElementById("total2").value = y;
+
+            var z = x - y;
+            if (z >= 0) {
+                document.getElementById("profit").value = "profit = " + z;
+            } else {
+                document.getElementById("profit").value = "Loss = " + z;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

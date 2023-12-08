@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="no1">
+    <br>
+    <br>
+    <input type="submit" value="Enter" onclick="person()">
+    <br>
+    <h1 id="print"></h1>
+    <script>
+        function person() {
+            var a = document.getElementById("no1").value;
+            var b;
+            var sum = 0;
+            var minus = 0;
+            var answer = 0;
+            for (b = 1; b <= a; b++) {
+                if (b % 2 == 0) {
+                    sum = sum + (b * b);
+                } else {
+                    minus = minus + (b * b);
+                }
+
+            }
+            answer = minus - sum;
+            document.getElementById("print").innerHTML = answer;
+
+        }
+    </script>
+</body>
+
+</html>

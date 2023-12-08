@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter Number</label>
+    <br>
+    <br>
+    <input type="text" id="num1" name="name">
+    <br>
+    <br>
+    <input type="submit" name="ans" id="ans" value="check" onclick="abc()">
+    <h1 id="value"></h1>
+
+    <script>
+        function abc() {
+            var a = parseInt(document.getElementById("num1").value);
+
+
+            var n;
+            var result;
+            var b = 0;
+            result = a;
+
+            while (a > 0) {
+                n = a % 10;
+                b = b + n * n * n;
+                a = parseInt(a / 10);
+            }
+            if (result == b) {
+                document.getElementById("value").innerHTML = "This Number Is Armstrong";
+            } else {
+                document.getElementById("value").innerHTML = "This Number Is Not Armstrong"
+            }
+        }
+    </script>
+</body>
+
+</html>

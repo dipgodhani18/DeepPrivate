@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #ans {
+        width: 250px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1> The Number Is Positive or Negative </h1>
+    <label>Enter Number :</label>
+    <input type="text" id="no1" name="no1">
+    <br><br>
+    <input type="submit" name="Enter" id="submit" onclick="answer()">
+    <br>
+    <br>
+    <input type="text" id="ans">
+
+    <script>
+        function answer() {
+            var a = document.getElementById("no1").value;
+
+            if (a >= '1' && a <= '10') {
+                document.getElementById("ans").value = "Given Character Is Positive ";
+            } else {
+                document.getElementById("ans").value = "Given Character Is Negative ";
+            }
+        }
+    </script>
+</body>
+
+</html>
