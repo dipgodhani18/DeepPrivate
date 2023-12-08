@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #1f1f1f;
+        gap: 100px;
+    }
+    
+    .colors {
+        position: relative;
+        padding: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #28292b;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+        border-radius: 10px;
+    }
+    
+    .colors span {
+        position: relative;
+        width: 50px;
+        height: 20px;
+        border-radius: 20px;
+        background: #1f1f1f;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    .colors span::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: var(--clr);
+        border-radius: 20px;
+        transition: 0.5s;
+        scale: 0.8;
+        opacity: 0.25;
+    }
+    
+    .colors span:hover::before {
+        opacity: 1;
+        scale: 1;
+    }
+    
+    .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background: #28292b;
+        border-radius: 10px;
+        transition: 0.5s;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+    }
+    
+    .colors span.active::before {
+        opacity: 1;
+        scale: 1.25;
+        left: 30px;
+        box-shadow: 0 0 10px var(--clr), 0 0 20px var(--clr), 0 0 50px var(--clr);
+    }
+</style>
+
+<body>
+    <div class="colors">
+        <span onclick="changeColor('#1dd1a1')" style="--clr:#1dd1a1;"></span>
+        <span onclick="changeColor('#ff6b6b')" style="--clr:#ff6b6b;"></span>
+        <span onclick="changeColor('#2e86de')" style="--clr:#2e86de;"></span>
+        <span onclick="changeColor('#f368e0')" style="--clr:#f368e0;"></span>
+        <span onclick="changeColor('#ff9f43')" style="--clr:#ff9f43;"></span>
+    </div>
+    <div class="box"></div>
+
+    <script>
+        let box = document.querySelector('.box');
+
+        function changeColor(color) {
+            box.style.background = color;
+            document.querySelectorAll('span').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

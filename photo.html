@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #071111;
+    }
+    
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+    
+    .container .box {
+        position: relative;
+        width: 320px;
+        height: 400px;
+        background: #f00;
+        margin: 20px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container .box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(315deg, #4dff03, #00d0ff);
+    }
+    
+    .container .box::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(315deg, #4dff03, #00d0ff);
+        filter: blur(30px);
+    }
+    
+    .container .box:nth-child(1):before,
+    .container .box:nth-child(1):after {
+        background: linear-gradient(45deg, #ffbc00, #ff0058);
+    }
+    
+    .container .box:nth-child(2):before,
+    .container .box:nth-child(2):after {
+        background: linear-gradient(45deg, #ffbc00, #ff0058);
+    }
+    
+    .container .box:nth-child(3):before,
+    .container .box:nth-child(3):after {
+        background: linear-gradient(315deg, #03a9fa, #ff0058);
+    }
+    
+    .container .box b {
+        position: absolute;
+        inset: 6px;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+    }
+    
+    .container .box img {
+        position: absolute;
+        z-index: 3;
+        scale: 0.8;
+        opacity: 0.25;
+        transition: 0.5s;
+        height: 350px;
+        width: 350px;
+        border-radius: 10px;
+    }
+    
+    .container .box:hover img {
+        scale: 0.6;
+        opacity: 0.9;
+        transform: translateY(-70px);
+    }
+    
+    .container .box .content {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s;
+        transform: scale(0);
+    }
+    
+    .container .box:hover .content {
+        transform: scale(1);
+        bottom: 35px;
+    }
+    
+    .container .box h2 {
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1em;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .container .box h2 span {
+        font-weight: 300;
+        font-size: 20px;
+    }
+    
+    .container .box .sci {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 5px;
+    }
+    
+    .container .box .sci li {
+        list-style: none;
+    }
+    
+    .container .box .sci li a {
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        background: rgba(0, 0, 0, 0.2);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: 0.5s;
+    }
+    
+    .container .box .sci li a:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <b></b>
+            <img src="k-prime2.jpeg" alt="">
+            <div class="content">
+                <h2>Virat Kohli <br><span>World's best finisher</span></h2>
+                <br>
+                <ul class="sci">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <b></b>
+            <img src="rohit sharma.jpg" alt="">
+            <div class="content">
+                <h2>Rohit Sharma <br><span>Hitting powerhouse</span></h2>
+                <br>
+                <ul class="sci">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <b></b>
+            <img src="jasprit.jpg" alt="">
+            <div class="content">
+                <h2>Jasprit Bumrah <br><span>Yorker king </span></h2>
+                <br>
+                <ul class="sci">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

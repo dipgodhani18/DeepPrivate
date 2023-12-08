@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+    }
+    
+    button {
+        background: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        height: 60px;
+        width: 200px;
+        margin-top: 300px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+    }
+    
+    button::before {
+        content: '';
+        position: absolute;
+        background: conic-gradient( #488cfb, #29dbbc, #ddf505, #ff9f0e, #e440bb, #655aDc, #488cfb);
+        width: 120%;
+        height: 320%;
+    }
+    
+    button::after {
+        content: '😁Hover Me!😁';
+        position: absolute;
+        background: rgb(76, 75, 75);
+        height: 85%;
+        width: 95%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: antiquewhite;
+        font-size: 20px;
+    }
+    
+    button:hover {
+        transform: scale(1.1);
+    }
+    
+    button:hover::before {
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <button>😁Hover Me!😁</button>
+    <button>😁Hover Me!😁</button>
+    <button>😁Hover Me!😁</button>
+
+    <button>😁Hover Me!😁</button>
+    <button>😁Hover Me!😁</button>
+
+    <button>😁Hover Me!😁</button>
+
+</body>
+
+</html>

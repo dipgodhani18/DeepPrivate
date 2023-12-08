@@ -5,168 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="table.css">
 </head>
-<style>
-    .main {
-        border: 2px solid black;
-        height: 200px;
-        width: 1000px;
-        padding: 30px;
-    }
-    
-    .table1,
-    .table2,
-    .table3,
-    .table4,
-    .table5,
-    .table6,
-    .table7,
-    .table8,
-    .table9,
-    .table10 {
-        position: absolute;
-    }
-    
-    .table2 {
-        margin-left: 100px;
-    }
-    
-    .table3 {
-        margin-left: 200px;
-    }
-    
-    .table4 {
-        margin-left: 300px;
-    }
-    
-    .table5 {
-        margin-left: 400px;
-    }
-    
-    .table6 {
-        margin-left: 500px;
-    }
-    
-    .table7 {
-        margin-left: 600px;
-    }
-    
-    .table8 {
-        margin-left: 700px;
-    }
-    
-    .table9 {
-        margin-left: 800px;
-    }
-    
-    .table10 {
-        margin-left: 900px;
-    }
-</style>
 
 <body>
-    <h1>Table</h1>
-    <div class="main">
-        <div class="table1">
-            <script>
-                var a = 1;
-                var b = 1;
+    <div class="box">
+        <span class="borderline"></span>
+        <form>
+            <h2>Sign in</h2>
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Username</span>
+                <i></i>
+            </div>
 
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table2">
-            <script>
-                var a = 1;
-                var b = 2;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table3">
-            <script>
-                var a = 1;
-                var b = 3;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table4">
-            <script>
-                var a = 1;
-                var b = 4;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table5">
-            <script>
-                var a = 1;
-                var b = 5;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table6">
-            <script>
-                var a = 1;
-                var b = 6;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table7">
-            <script>
-                var a = 1;
-                var b = 7;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table8">
-            <script>
-                var a = 1;
-                var b = 8;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table9">
-            <script>
-                var a = 1;
-                var b = 9;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
-        <div class="table10">
-            <script>
-                var a = 1;
-                var b = 10;
-
-                for (i = a; i <= 10; i++) {
-                    document.write(b + "x" + a++ + "=" + i * b, "<br>");
-                }
-            </script>
-        </div>
+            <div class="inputbox">
+                <input type="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#">Signup</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
     </div>
 </body>
 

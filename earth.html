@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+    }
+    
+    body {
+        background: url(universe.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        transform-style: preserve-3d;
+    }
+    
+    .earth {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+        background: url(map.png);
+        background-size: cover;
+        background-repeat: repeat-x;
+        border-radius: 50%;
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px #4069ff;
+        animation: Earth 120s linear infinite;
+    }
+    
+    @keyframes Earth {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: -750px 0;
+        }
+    }
+</style>
+
+<body>
+    <section>
+        <div class="earth"></div>
+    </section>
+</body>
+
+</html>

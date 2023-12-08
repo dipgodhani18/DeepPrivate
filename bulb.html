@@ -23,6 +23,7 @@
     
     label {
         position: relative;
+        top: -150px;
         width: 150px;
         height: 75px;
         background: #212121;
@@ -68,8 +69,16 @@
         position: absolute;
         width: 348px;
         height: 408px;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
         pointer-events: none;
-        background: url();
+        background: url(bulb_off.jpg);
+        transition: 0.5s;
+    }
+    
+    label input:checked~.bulb {
+        background: url(bulb_on.jpg);
     }
 </style>
 
